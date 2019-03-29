@@ -26,18 +26,13 @@
 
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
+            android:background="#FA8072"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:gravity="center"
-            android:background="#FA8072"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:orientation="vertical">
             <TextView
-                android:layout_weight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -46,7 +41,7 @@
                 android:id="@+id/t_producto11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"/>
+                android:text="0"/>
         </LinearLayout>
 
         <LinearLayout
@@ -57,15 +52,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#FFA500"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -85,15 +76,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#00FF7F"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -113,15 +100,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#E0FFFF"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -142,15 +125,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#B0C4DE"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -170,15 +149,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#DDA0DD"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -198,15 +173,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#FFFFF0"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -225,15 +196,11 @@
             android:layout_width="wrap_content"
             android:gravity="center"
             android:background="#FFE4C4"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -247,10 +214,7 @@
 
         <LinearLayout
 
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_height="wrap_content"
@@ -260,8 +224,7 @@
             android:orientation="vertical">
             <TextView
 
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
+
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:gravity="center"
@@ -281,28 +244,52 @@
         android:orientation="vertical"
         android:paddingLeft="10dp"
         android:paddingRight="10dp">
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TotalProductos:  "/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_totalProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario"/>
+            android:text="Usuario:  "/>
         <TextView
             android:layout_marginTop="20dp"
             android:id="@+id/tv_Usuario1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <TextView
 
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Correo Electronico"/>
+            android:text="Correo Electronico:  "/>
         <TextView
             android:layout_marginTop="20dp"
             android:id="@+id/tv_Correo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        </LinearLayout>
         <Button
             android:layout_gravity="center"
             android:id="@+id/btn_share"

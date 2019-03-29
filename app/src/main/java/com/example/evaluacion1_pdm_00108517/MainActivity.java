@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int producto7 = 0;
     int producto8 = 0;
     int producto9 = 0;
-    int productoTotal=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnEnviar = findViewById(R.id.btn_enviar);
 
         btnEnviar.setOnClickListener(v->{
-            productoTotal = producto1+producto2+producto3+producto4+producto5+producto6+producto7+producto8+producto9;
+
             Intent intent = new Intent(this, MostrarProductos.class);
             intent.putExtra("Usuario", etUsuario.getText().toString() );
             intent.putExtra("Correo",etCorreo.getText().toString());
@@ -82,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("Producto7", p7.getText().toString());
             intent.putExtra("Producto8", p8.getText().toString());
             intent.putExtra("Producto9", p9.getText().toString());
+            int productototal = producto1 + producto2 + producto3 + producto4 + producto5 + producto6 + producto7 + producto8 + producto9;
+            Log.i("total:", String.valueOf(productototal));
+            intent.putExtra("ptotal",productototal);
+
             startActivity(intent);
 
         });
