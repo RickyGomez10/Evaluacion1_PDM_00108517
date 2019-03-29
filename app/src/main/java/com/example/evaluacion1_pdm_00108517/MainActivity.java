@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("Producto7", p7.getText().toString());
             intent.putExtra("Producto8", p8.getText().toString());
             intent.putExtra("Producto9", p9.getText().toString());
-            intent.putExtra("ProductoTotal",productoTotal);
             startActivity(intent);
 
         });
